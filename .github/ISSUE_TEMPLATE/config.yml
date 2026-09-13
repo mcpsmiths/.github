@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/orgs/mcpsmiths/discussions
+    about: General questions, not bugs
+  - name: Propose a new MCP server
+    url: https://github.com/orgs/mcpsmiths/discussions
+    about: Suggest a tool/backend that should get its own MCP server in this org
