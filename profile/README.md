@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="profile/assets/logo.png" alt="mcpsmiths" width="120" />
+
 # mcpsmiths
 
 **Small, focused MCP servers for observability and cost control.**
