@@ -4,7 +4,8 @@
 
 **Small, focused MCP servers for observability and cost control.**
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mcpsmiths/.github/blob/main/LICENSE)
+[![tracehub-mcp license: Apache-2.0](https://img.shields.io/badge/tracehub--mcp-Apache--2.0-blue.svg)](https://github.com/mcpsmiths/tracehub-mcp/blob/main/LICENSE)
+[![cost-guard-mcp license: MIT](https://img.shields.io/badge/cost--guard--mcp-MIT-blue.svg)](https://github.com/mcpsmiths/cost-guard-mcp/blob/main/LICENSE)
 [![Code of Conduct](https://img.shields.io/badge/code%20of%20conduct-contributor%20covenant-blueviolet.svg)](https://github.com/mcpsmiths/.github/blob/main/CODE_OF_CONDUCT.md)
 [![MCP](https://img.shields.io/badge/protocol-MCP-orange.svg)](https://modelcontextprotocol.io)
 [![PyPI - tracehub-mcp](https://img.shields.io/pypi/v/tracehub-mcp?label=tracehub-mcp)](https://pypi.org/project/tracehub-mcp/)
@@ -21,7 +22,7 @@ mcpsmiths builds small, focused [Model Context Protocol](https://modelcontextpro
 | Repo | What it does | Install | Docs |
 |---|---|---|---|
 | [**tracehub-mcp**](https://github.com/mcpsmiths/tracehub-mcp) | MCP server for querying OpenTelemetry traces across multiple observability backends (Jaeger, Tempo, Traceloop, Datadog, and more) for LLM application debugging. Fork of `traceloop/opentelemetry-mcp-server`. | `pip install tracehub-mcp` | [PyPI](https://pypi.org/project/tracehub-mcp/) |
-| [**cost-guard-mcp**](https://github.com/mcpsmiths/cost-guard-mcp) | Pre-flight query cost & result-size guardrails for AI agents across BigQuery and Snowflake — stops a runaway query before it runs, not after the bill arrives. | `pip install cost-guard-mcp` | [PyPI](https://pypi.org/project/cost-guard-mcp/) |
+| [**cost-guard-mcp**](https://github.com/mcpsmiths/cost-guard-mcp) | Pre-flight query cost & result-size guardrails for AI agents across BigQuery, Snowflake, and Databricks — stops a runaway query before it runs, not after the bill arrives. | `pip install cost-guard-mcp` | [PyPI](https://pypi.org/project/cost-guard-mcp/) |
 
 ## Why MCP servers, and why these two
 
@@ -32,7 +33,7 @@ Agents that can query your infra are only safe if they can (a) see what's actual
 This org is solo-maintained, but contributions are welcome in two forms:
 
 1. **Improve an existing server** — open an issue or PR directly on [`tracehub-mcp`](https://github.com/mcpsmiths/tracehub-mcp) or [`cost-guard-mcp`](https://github.com/mcpsmiths/cost-guard-mcp). Both repos inherit this org's [Contributing guide](https://github.com/mcpsmiths/.github/blob/main/CONTRIBUTING.md), [Code of Conduct](https://github.com/mcpsmiths/.github/blob/main/CODE_OF_CONDUCT.md), and issue templates automatically.
-2. **Propose a new server** — open a [discussion](https://github.com/orgs/mcpsmiths/discussions) describing the tool/backend you'd want an MCP server for. If it fits the "small, focused, one job" ethos above, it's a strong candidate to become the next repo in this org.
+2. **Propose a new server** — open an [issue](https://github.com/mcpsmiths/.github/issues/new) describing the tool/backend you'd want an MCP server for. If it fits the "small, focused, one job" ethos above, it's a strong candidate to become the next repo in this org.
 
 New repos in this org start from the same baseline: MIT-licensed, `mcp` + `mcp-server` + `model-context-protocol` topics, a `SECURITY.md`-backed vulnerability-reporting flow, and a listing in the [official MCP registry](https://registry.modelcontextprotocol.io/).
 
@@ -42,11 +43,11 @@ Both servers execute against real infrastructure (traces, warehouses) on behalf 
 
 ## Roadmap / what's next
 
-- [ ] Publish both servers to the [official MCP Registry](https://registry.modelcontextprotocol.io/) (identity-verified via GitHub OAuth)
+- [x] Publish both servers to the [official MCP Registry](https://registry.modelcontextprotocol.io/) (identity-verified via GitHub OAuth)
 - [ ] Submit `cost-guard-mcp` to the [Docker MCP Registry](https://github.com/docker/mcp-registry) for signed/SBOM'd container distribution
 - [ ] Enable org-wide Discussions, sourced from `tracehub-mcp`
 - [ ] Submit to one well-targeted awesome-list (`punkpeye/awesome-mcp-servers`)
-- [ ] Third MCP server — candidates tracked in Discussions
+- [ ] Third MCP server — candidates tracked in [issues](https://github.com/mcpsmiths/.github/issues)
 
 ## About
 
